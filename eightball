@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.red + '''
+welcome to magic eight ball!
+enter your question below
+''' + c.reset)
+answers = ['yes','no','maybe']
+import random
+while True:
+    question=input('-->').strip().lower() 
+    answer = random.choice(answers)
+    print(answer)
+    if question == 'poop':
+        print('Ooh dats nice... ')
